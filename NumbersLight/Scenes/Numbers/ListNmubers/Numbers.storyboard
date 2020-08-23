@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Numbers View Controller-->
+        <scene sceneID="2Wf-Z6-Td5">
+            <objects>
+                <viewController storyboardIdentifier="ListNumbersVCStoryboardID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KEU-1s-bFN" customClass="ListNumbersViewController" customModule="NumbersLight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P7a-hb-T2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SbZ-zR-qtP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="6PP-oc-vc8">
+                                <rect key="frame" x="177" y="418" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="VsR-TT-95C"/>
+                                    <constraint firstAttribute="width" constant="60" id="kQc-7C-tJm"/>
+                                </constraints>
+                                <color key="color" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLR-Fz-i3P">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error connexion " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sT2-fg-85w">
+                                        <rect key="frame" x="145" y="458.5" width="124.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fif-dl-CjU">
+                                        <rect key="frame" x="187" y="394" width="40" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Retry"/>
+                                        <connections>
+                                            <action selector="retryTapped:" destination="KEU-1s-bFN" eventType="touchUpInside" id="uxf-1F-Tkx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="sT2-fg-85w" firstAttribute="centerX" secondItem="BLR-Fz-i3P" secondAttribute="centerX" id="016-vf-zz5"/>
+                                    <constraint firstItem="sT2-fg-85w" firstAttribute="centerY" secondItem="BLR-Fz-i3P" secondAttribute="centerY" constant="60" id="62F-bE-owE"/>
+                                    <constraint firstItem="fif-dl-CjU" firstAttribute="centerX" secondItem="BLR-Fz-i3P" secondAttribute="centerX" id="mDP-0B-v5f"/>
+                                    <constraint firstItem="fif-dl-CjU" firstAttribute="centerY" secondItem="BLR-Fz-i3P" secondAttribute="centerY" id="xFh-Cn-cQs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GyT-Vk-qiB" firstAttribute="trailing" secondItem="SbZ-zR-qtP" secondAttribute="trailing" id="9PX-K4-Bvo"/>
+                            <constraint firstItem="BLR-Fz-i3P" firstAttribute="top" secondItem="GyT-Vk-qiB" secondAttribute="top" id="ALB-QZ-WZS"/>
+                            <constraint firstItem="6PP-oc-vc8" firstAttribute="centerX" secondItem="P7a-hb-T2Q" secondAttribute="centerX" id="BOy-LH-27E"/>
+                            <constraint firstItem="SbZ-zR-qtP" firstAttribute="leading" secondItem="GyT-Vk-qiB" secondAttribute="leading" id="BQK-3D-tCC"/>
+                            <constraint firstItem="BLR-Fz-i3P" firstAttribute="leading" secondItem="GyT-Vk-qiB" secondAttribute="leading" id="CGi-Co-Lbf"/>
+                            <constraint firstItem="6PP-oc-vc8" firstAttribute="centerY" secondItem="P7a-hb-T2Q" secondAttribute="centerY" id="NRM-nc-khw"/>
+                            <constraint firstItem="GyT-Vk-qiB" firstAttribute="trailing" secondItem="BLR-Fz-i3P" secondAttribute="trailing" id="UeG-NF-Cw9"/>
+                            <constraint firstItem="GyT-Vk-qiB" firstAttribute="bottom" secondItem="SbZ-zR-qtP" secondAttribute="bottom" id="m5q-OS-gJt"/>
+                            <constraint firstItem="GyT-Vk-qiB" firstAttribute="bottom" secondItem="BLR-Fz-i3P" secondAttribute="bottom" id="uRM-X0-07O"/>
+                            <constraint firstItem="SbZ-zR-qtP" firstAttribute="top" secondItem="GyT-Vk-qiB" secondAttribute="top" id="v2Q-KY-ZqG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GyT-Vk-qiB"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadingView" destination="6PP-oc-vc8" id="RK7-Qo-NyH"/>
+                        <outlet property="retryView" destination="BLR-Fz-i3P" id="3Or-MR-WUD"/>
+                        <outlet property="tableView" destination="SbZ-zR-qtP" id="6w7-Mh-EZD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R8v-qm-qCr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-141" y="86"/>
+        </scene>
+        <!--Details Number View Controller-->
+        <scene sceneID="26i-KB-PpX">
+            <objects>
+                <viewController storyboardIdentifier="DetailsNumberViewControllerStoryboardId" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7jn-ih-OY8" customClass="DetailsNumberViewController" customModule="NumbersLight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hiZ-qR-gp0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jfQ-x4-KN7" customClass="RemoteImageView" customModule="NumbersLight" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="718"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOB-ip-EcU">
+                                <rect key="frame" x="186" y="782" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jfQ-x4-KN7" firstAttribute="top" secondItem="Czn-mV-jZU" secondAttribute="top" id="016-f1-07K"/>
+                            <constraint firstItem="jfQ-x4-KN7" firstAttribute="leading" secondItem="Czn-mV-jZU" secondAttribute="leading" id="2Q4-fa-4qh"/>
+                            <constraint firstItem="HOB-ip-EcU" firstAttribute="top" secondItem="jfQ-x4-KN7" secondAttribute="bottom" constant="20" id="FKp-Aa-dJJ"/>
+                            <constraint firstItem="HOB-ip-EcU" firstAttribute="centerX" secondItem="hiZ-qR-gp0" secondAttribute="centerX" id="bCf-8I-MjW"/>
+                            <constraint firstItem="Czn-mV-jZU" firstAttribute="trailing" secondItem="jfQ-x4-KN7" secondAttribute="trailing" id="fay-bt-Nqa"/>
+                            <constraint firstItem="Czn-mV-jZU" firstAttribute="bottom" secondItem="jfQ-x4-KN7" secondAttribute="bottom" constant="100" id="gXO-mZ-PQY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Czn-mV-jZU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1ce-WS-J8c">
+                        <barButtonItem key="backBarButtonItem" title="Numbers" id="kUj-MC-aeO"/>
+                    </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="HOB-ip-EcU" id="W4G-gj-oE4"/>
+                        <outlet property="numberImageView" destination="jfQ-x4-KN7" id="Cln-zL-fkJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLC-Uz-s0F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="731"/>
+        </scene>
+    </scenes>
+</document>

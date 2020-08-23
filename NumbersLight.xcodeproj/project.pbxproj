@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC62E2BA24F2845E000EB816 /* DetailsNumbersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62E2B924F2845E000EB816 /* DetailsNumbersInteractor.swift */; };
+		DC62E2BC24F284A6000EB816 /* DetailsNumberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62E2BB24F284A6000EB816 /* DetailsNumberPresenter.swift */; };
+		DC62E2BE24F28808000EB816 /* DetailsNumberRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62E2BD24F28808000EB816 /* DetailsNumberRouter.swift */; };
+		DC8D648124F08BA900518534 /* ListNumbersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D648024F08BA900518534 /* ListNumbersPresenter.swift */; };
+		DC8D648524F08C8300518534 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D648424F08C8300518534 /* NetworkManager.swift */; };
+		DC8D648724F13ED100518534 /* ListNumbersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D648624F13ED100518534 /* ListNumbersDataSource.swift */; };
+		DC8D648B24F1530600518534 /* NumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D648924F1530600518534 /* NumberTableViewCell.swift */; };
+		DC8D648C24F1530600518534 /* NumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC8D648A24F1530600518534 /* NumberTableViewCell.xib */; };
+		DC8D649124F2075500518534 /* NumbersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D649024F2075500518534 /* NumbersAPI.swift */; };
+		DC8D649324F2077000518534 /* NumbersWorkerInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D649224F2077000518534 /* NumbersWorkerInterfaces.swift */; };
+		DC8D649524F2078600518534 /* NumbersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D649424F2078600518534 /* NumbersWorker.swift */; };
+		DC8D649824F20C4A00518534 /* ListNumbersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D649724F20C4A00518534 /* ListNumbersResponse.swift */; };
+		DC8D649B24F21CFD00518534 /* numbers.json in Resources */ = {isa = PBXBuildFile; fileRef = DC8D649A24F21CFD00518534 /* numbers.json */; };
+		DC8D649E24F21F0600518534 /* NumbersMockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D649D24F21F0600518534 /* NumbersMockStore.swift */; };
+		DC8D64A524F23B5900518534 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D64A424F23B5900518534 /* RemoteImageView.swift */; };
+		DC8D64A824F24F6800518534 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D64A724F24F6800518534 /* NetworkMonitor.swift */; };
+		DC8D64AB24F24F8300518534 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D64AA24F24F8300518534 /* Network.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		DC8D64AF24F2660400518534 /* DetailsNumberInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D64AE24F2660400518534 /* DetailsNumberInterfaces.swift */; };
+		DC8D64B124F266BF00518534 /* DetailsNumberModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D64B024F266BF00518534 /* DetailsNumberModels.swift */; };
+		DC8D64B324F268AB00518534 /* NumberDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D64B224F268AB00518534 /* NumberDetails.swift */; };
+		DC8D64B524F2734300518534 /* DetailsNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D64B424F2734300518534 /* DetailsNumberViewController.swift */; };
+		DC8D64B724F27B7000518534 /* DetailsNumberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D64B624F27B7000518534 /* DetailsNumberResponse.swift */; };
+		DCD3342D24ED055300C3310F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3342C24ED055300C3310F /* AppDelegate.swift */; };
+		DCD3342F24ED055300C3310F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3342E24ED055300C3310F /* SceneDelegate.swift */; };
+		DCD3343624ED055400C3310F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD3343524ED055400C3310F /* Assets.xcassets */; };
+		DCD3343924ED055400C3310F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD3343724ED055400C3310F /* LaunchScreen.storyboard */; };
+		DCD3344424ED055400C3310F /* NumbersLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3344324ED055400C3310F /* NumbersLightTests.swift */; };
+		DCD3345024ED087200C3310F /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3344F24ED087200C3310F /* Number.swift */; };
+		DCD3345424ED0EB600C3310F /* ListNumbersInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3345324ED0EB600C3310F /* ListNumbersInterfaces.swift */; };
+		DCD3345624ED0EDF00C3310F /* ListNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3345524ED0EDF00C3310F /* ListNumbersViewController.swift */; };
+		DCD3345824ED687E00C3310F /* ListNumbersModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3345724ED687E00C3310F /* ListNumbersModels.swift */; };
+		DCD3345A24EE79BB00C3310F /* ListNumbersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3345924EE79BB00C3310F /* ListNumbersInteractor.swift */; };
+		DCD3345C24EE7B8100C3310F /* ListNumbersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3345B24EE7B8100C3310F /* ListNumbersRouter.swift */; };
+		DCD3345E24F07C0A00C3310F /* Numbers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD3345D24F07C0A00C3310F /* Numbers.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCD3344024ED055400C3310F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD3342124ED055300C3310F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD3342824ED055300C3310F;
+			remoteInfo = NumbersLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC62E2B924F2845E000EB816 /* DetailsNumbersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNumbersInteractor.swift; sourceTree = "<group>"; };
+		DC62E2BB24F284A6000EB816 /* DetailsNumberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNumberPresenter.swift; sourceTree = "<group>"; };
+		DC62E2BD24F28808000EB816 /* DetailsNumberRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNumberRouter.swift; sourceTree = "<group>"; };
+		DC8D648024F08BA900518534 /* ListNumbersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNumbersPresenter.swift; sourceTree = "<group>"; };
+		DC8D648424F08C8300518534 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DC8D648624F13ED100518534 /* ListNumbersDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNumbersDataSource.swift; sourceTree = "<group>"; };
+		DC8D648924F1530600518534 /* NumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTableViewCell.swift; sourceTree = "<group>"; };
+		DC8D648A24F1530600518534 /* NumberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberTableViewCell.xib; sourceTree = "<group>"; };
+		DC8D649024F2075500518534 /* NumbersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersAPI.swift; sourceTree = "<group>"; };
+		DC8D649224F2077000518534 /* NumbersWorkerInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersWorkerInterfaces.swift; sourceTree = "<group>"; };
+		DC8D649424F2078600518534 /* NumbersWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersWorker.swift; sourceTree = "<group>"; };
+		DC8D649724F20C4A00518534 /* ListNumbersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNumbersResponse.swift; sourceTree = "<group>"; };
+		DC8D649A24F21CFD00518534 /* numbers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = numbers.json; sourceTree = "<group>"; };
+		DC8D649D24F21F0600518534 /* NumbersMockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersMockStore.swift; sourceTree = "<group>"; };
+		DC8D64A424F23B5900518534 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		DC8D64A724F24F6800518534 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		DC8D64AA24F24F8300518534 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		DC8D64AE24F2660400518534 /* DetailsNumberInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNumberInterfaces.swift; sourceTree = "<group>"; };
+		DC8D64B024F266BF00518534 /* DetailsNumberModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNumberModels.swift; sourceTree = "<group>"; };
+		DC8D64B224F268AB00518534 /* NumberDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberDetails.swift; sourceTree = "<group>"; };
+		DC8D64B424F2734300518534 /* DetailsNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNumberViewController.swift; sourceTree = "<group>"; };
+		DC8D64B624F27B7000518534 /* DetailsNumberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNumberResponse.swift; sourceTree = "<group>"; };
+		DCD3342924ED055300C3310F /* NumbersLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumbersLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD3342C24ED055300C3310F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCD3342E24ED055300C3310F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DCD3343524ED055400C3310F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCD3343824ED055400C3310F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCD3343A24ED055400C3310F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD3343F24ED055400C3310F /* NumbersLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumbersLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD3344324ED055400C3310F /* NumbersLightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersLightTests.swift; sourceTree = "<group>"; };
+		DCD3344524ED055400C3310F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD3344F24ED087200C3310F /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		DCD3345324ED0EB600C3310F /* ListNumbersInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNumbersInterfaces.swift; sourceTree = "<group>"; };
+		DCD3345524ED0EDF00C3310F /* ListNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNumbersViewController.swift; sourceTree = "<group>"; };
+		DCD3345724ED687E00C3310F /* ListNumbersModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNumbersModels.swift; sourceTree = "<group>"; };
+		DCD3345924EE79BB00C3310F /* ListNumbersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNumbersInteractor.swift; sourceTree = "<group>"; };
+		DCD3345B24EE7B8100C3310F /* ListNumbersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNumbersRouter.swift; sourceTree = "<group>"; };
+		DCD3345D24F07C0A00C3310F /* Numbers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Numbers.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCD3342624ED055300C3310F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8D64AB24F24F8300518534 /* Network.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD3343C24ED055400C3310F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC8D648224F08C5F00518534 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D648324F08C6E00518534 /* Networking */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DC8D648324F08C6E00518534 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D648424F08C8300518534 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DC8D648824F152DD00518534 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D648924F1530600518534 /* NumberTableViewCell.swift */,
+				DC8D648A24F1530600518534 /* NumberTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DC8D648D24F2072800518534 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D64A624F2417F00518534 /* Services */,
+				DC8D648E24F2073100518534 /* Stores */,
+				DC8D649224F2077000518534 /* NumbersWorkerInterfaces.swift */,
+				DC8D649424F2078600518534 /* NumbersWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		DC8D648E24F2073100518534 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D649C24F21EE700518534 /* Mocks */,
+				DC8D648F24F2073A00518534 /* API */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		DC8D648F24F2073A00518534 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D649624F20C3600518534 /* Responses */,
+				DC8D649024F2075500518534 /* NumbersAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DC8D649624F20C3600518534 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D649724F20C4A00518534 /* ListNumbersResponse.swift */,
+				DC8D64B624F27B7000518534 /* DetailsNumberResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		DC8D649924F21C8C00518534 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D649A24F21CFD00518534 /* numbers.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC8D649C24F21EE700518534 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D649D24F21F0600518534 /* NumbersMockStore.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		DC8D64A224F23B2600518534 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D64A324F23B2F00518534 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		DC8D64A324F23B2F00518534 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D64A424F23B5900518534 /* RemoteImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC8D64A624F2417F00518534 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D64A724F24F6800518534 /* NetworkMonitor.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DC8D64A924F24F8300518534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D64AA24F24F8300518534 /* Network.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC8D64AC24F2657800518534 /* ListNmubers */ = {
+			isa = PBXGroup;
+			children = (
+				DCD3345D24F07C0A00C3310F /* Numbers.storyboard */,
+				DC8D648824F152DD00518534 /* Cells */,
+				DCD3345324ED0EB600C3310F /* ListNumbersInterfaces.swift */,
+				DCD3345524ED0EDF00C3310F /* ListNumbersViewController.swift */,
+				DCD3345724ED687E00C3310F /* ListNumbersModels.swift */,
+				DCD3345924EE79BB00C3310F /* ListNumbersInteractor.swift */,
+				DCD3345B24EE7B8100C3310F /* ListNumbersRouter.swift */,
+				DC8D648024F08BA900518534 /* ListNumbersPresenter.swift */,
+				DC8D648624F13ED100518534 /* ListNumbersDataSource.swift */,
+			);
+			path = ListNmubers;
+			sourceTree = "<group>";
+		};
+		DC8D64AD24F2659C00518534 /* DetailsNumber */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D64AE24F2660400518534 /* DetailsNumberInterfaces.swift */,
+				DC8D64B024F266BF00518534 /* DetailsNumberModels.swift */,
+				DC8D64B424F2734300518534 /* DetailsNumberViewController.swift */,
+				DC62E2B924F2845E000EB816 /* DetailsNumbersInteractor.swift */,
+				DC62E2BB24F284A6000EB816 /* DetailsNumberPresenter.swift */,
+				DC62E2BD24F28808000EB816 /* DetailsNumberRouter.swift */,
+			);
+			path = DetailsNumber;
+			sourceTree = "<group>";
+		};
+		DCD3342024ED055300C3310F = {
+			isa = PBXGroup;
+			children = (
+				DCD3342B24ED055300C3310F /* NumbersLight */,
+				DCD3344224ED055400C3310F /* NumbersLightTests */,
+				DCD3342A24ED055300C3310F /* Products */,
+				DC8D64A924F24F8300518534 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DCD3342A24ED055300C3310F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD3342924ED055300C3310F /* NumbersLight.app */,
+				DCD3343F24ED055400C3310F /* NumbersLightTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD3342B24ED055300C3310F /* NumbersLight */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D64A224F23B2600518534 /* Shared */,
+				DC8D649924F21C8C00518534 /* Resources */,
+				DC8D648D24F2072800518534 /* Workers */,
+				DC8D648224F08C5F00518534 /* Components */,
+				DCD3345124ED0E5A00C3310F /* Scenes */,
+				DCD3344E24ED085200C3310F /* Entities */,
+				DCD3342C24ED055300C3310F /* AppDelegate.swift */,
+				DCD3342E24ED055300C3310F /* SceneDelegate.swift */,
+				DCD3343524ED055400C3310F /* Assets.xcassets */,
+				DCD3343724ED055400C3310F /* LaunchScreen.storyboard */,
+				DCD3343A24ED055400C3310F /* Info.plist */,
+			);
+			path = NumbersLight;
+			sourceTree = "<group>";
+		};
+		DCD3344224ED055400C3310F /* NumbersLightTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCD3344324ED055400C3310F /* NumbersLightTests.swift */,
+				DCD3344524ED055400C3310F /* Info.plist */,
+			);
+			path = NumbersLightTests;
+			sourceTree = "<group>";
+		};
+		DCD3344E24ED085200C3310F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DCD3344F24ED087200C3310F /* Number.swift */,
+				DC8D64B224F268AB00518534 /* NumberDetails.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DCD3345124ED0E5A00C3310F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DCD3345224ED0E9100C3310F /* Numbers */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DCD3345224ED0E9100C3310F /* Numbers */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D64AD24F2659C00518534 /* DetailsNumber */,
+				DC8D64AC24F2657800518534 /* ListNmubers */,
+			);
+			path = Numbers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCD3342824ED055300C3310F /* NumbersLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD3344824ED055400C3310F /* Build configuration list for PBXNativeTarget "NumbersLight" */;
+			buildPhases = (
+				DCD3342524ED055300C3310F /* Sources */,
+				DCD3342624ED055300C3310F /* Frameworks */,
+				DCD3342724ED055300C3310F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NumbersLight;
+			productName = NumbersLight;
+			productReference = DCD3342924ED055300C3310F /* NumbersLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCD3343E24ED055400C3310F /* NumbersLightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD3344B24ED055400C3310F /* Build configuration list for PBXNativeTarget "NumbersLightTests" */;
+			buildPhases = (
+				DCD3343B24ED055400C3310F /* Sources */,
+				DCD3343C24ED055400C3310F /* Frameworks */,
+				DCD3343D24ED055400C3310F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD3344124ED055400C3310F /* PBXTargetDependency */,
+			);
+			name = NumbersLightTests;
+			productName = NumbersLightTests;
+			productReference = DCD3343F24ED055400C3310F /* NumbersLightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCD3342124ED055300C3310F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Tarek-HACHANI";
+				TargetAttributes = {
+					DCD3342824ED055300C3310F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					DCD3343E24ED055400C3310F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = DCD3342824ED055300C3310F;
+					};
+				};
+			};
+			buildConfigurationList = DCD3342424ED055300C3310F /* Build configuration list for PBXProject "NumbersLight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCD3342024ED055300C3310F;
+			productRefGroup = DCD3342A24ED055300C3310F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCD3342824ED055300C3310F /* NumbersLight */,
+				DCD3343E24ED055400C3310F /* NumbersLightTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCD3342724ED055300C3310F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8D648C24F1530600518534 /* NumberTableViewCell.xib in Resources */,
+				DCD3343924ED055400C3310F /* LaunchScreen.storyboard in Resources */,
+				DC8D649B24F21CFD00518534 /* numbers.json in Resources */,
+				DCD3343624ED055400C3310F /* Assets.xcassets in Resources */,
+				DCD3345E24F07C0A00C3310F /* Numbers.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD3343D24ED055400C3310F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCD3342524ED055300C3310F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD3345424ED0EB600C3310F /* ListNumbersInterfaces.swift in Sources */,
+				DC8D64B324F268AB00518534 /* NumberDetails.swift in Sources */,
+				DC62E2BA24F2845E000EB816 /* DetailsNumbersInteractor.swift in Sources */,
+				DC8D649324F2077000518534 /* NumbersWorkerInterfaces.swift in Sources */,
+				DCD3345A24EE79BB00C3310F /* ListNumbersInteractor.swift in Sources */,
+				DC8D64AF24F2660400518534 /* DetailsNumberInterfaces.swift in Sources */,
+				DCD3345824ED687E00C3310F /* ListNumbersModels.swift in Sources */,
+				DC8D649E24F21F0600518534 /* NumbersMockStore.swift in Sources */,
+				DC8D64B124F266BF00518534 /* DetailsNumberModels.swift in Sources */,
+				DC8D649524F2078600518534 /* NumbersWorker.swift in Sources */,
+				DC8D649124F2075500518534 /* NumbersAPI.swift in Sources */,
+				DCD3345024ED087200C3310F /* Number.swift in Sources */,
+				DC8D648524F08C8300518534 /* NetworkManager.swift in Sources */,
+				DC8D64B724F27B7000518534 /* DetailsNumberResponse.swift in Sources */,
+				DC8D648724F13ED100518534 /* ListNumbersDataSource.swift in Sources */,
+				DCD3345624ED0EDF00C3310F /* ListNumbersViewController.swift in Sources */,
+				DC8D648B24F1530600518534 /* NumberTableViewCell.swift in Sources */,
+				DC8D648124F08BA900518534 /* ListNumbersPresenter.swift in Sources */,
+				DCD3342D24ED055300C3310F /* AppDelegate.swift in Sources */,
+				DC62E2BC24F284A6000EB816 /* DetailsNumberPresenter.swift in Sources */,
+				DC8D649824F20C4A00518534 /* ListNumbersResponse.swift in Sources */,
+				DCD3345C24EE7B8100C3310F /* ListNumbersRouter.swift in Sources */,
+				DC8D64A524F23B5900518534 /* RemoteImageView.swift in Sources */,
+				DC8D64A824F24F6800518534 /* NetworkMonitor.swift in Sources */,
+				DC62E2BE24F28808000EB816 /* DetailsNumberRouter.swift in Sources */,
+				DCD3342F24ED055300C3310F /* SceneDelegate.swift in Sources */,
+				DC8D64B524F2734300518534 /* DetailsNumberViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD3343B24ED055400C3310F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD3344424ED055400C3310F /* NumbersLightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCD3344124ED055400C3310F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD3342824ED055300C3310F /* NumbersLight */;
+			targetProxy = DCD3344024ED055400C3310F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCD3343724ED055400C3310F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD3343824ED055400C3310F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCD3344624ED055400C3310F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCD3344724ED055400C3310F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCD3344924ED055400C3310F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NumbersLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tarek.hachani.NumbersLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCD3344A24ED055400C3310F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NumbersLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tarek.hachani.NumbersLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DCD3344C24ED055400C3310F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NumbersLightTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tarek.hachani.NumbersLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NumbersLight.app/NumbersLight";
+			};
+			name = Debug;
+		};
+		DCD3344D24ED055400C3310F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NumbersLightTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tarek.hachani.NumbersLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NumbersLight.app/NumbersLight";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCD3342424ED055300C3310F /* Build configuration list for PBXProject "NumbersLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD3344624ED055400C3310F /* Debug */,
+				DCD3344724ED055400C3310F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD3344824ED055400C3310F /* Build configuration list for PBXNativeTarget "NumbersLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD3344924ED055400C3310F /* Debug */,
+				DCD3344A24ED055400C3310F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD3344B24ED055400C3310F /* Build configuration list for PBXNativeTarget "NumbersLightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD3344C24ED055400C3310F /* Debug */,
+				DCD3344D24ED055400C3310F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCD3342124ED055300C3310F /* Project object */;
+}
